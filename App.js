@@ -69,7 +69,7 @@ export default function App() {
     <View style={styles.container}>
       <Text style={styles.title}>Useful Expense Splitter</Text>
 
-      {/* Add Participant Section */}
+      /* Add Participant Section */
       <View style={styles.inputContainer}>
         <TextInput
           style={styles.input}
@@ -82,7 +82,7 @@ export default function App() {
         </TouchableOpacity>
       </View>
 
-      {/* Participants List */}
+      /* Participants List */
       <FlatList
         data={participants}
         keyExtractor={(item, index) => index.toString()}
@@ -99,7 +99,7 @@ export default function App() {
         )}
       />
 
-      {/* Add Expense Section */}
+      /* Add Expense Section */
       <View style={styles.inputContainer}>
         <TextInput
           style={styles.input}
@@ -119,7 +119,7 @@ export default function App() {
         </TouchableOpacity>
       </View>
 
-      {/* Expenses List */}
+      /* Expenses List */
       <FlatList
         data={expenses}
         keyExtractor={(item, index) => index.toString()}
@@ -132,7 +132,7 @@ export default function App() {
         )}
       />
 
-      {/* Clear Expenses Button */}
+      /* Clear Expenses Button */
       <TouchableOpacity style={styles.clearButton} onPress={clearExpenses}>
         <Text style={styles.clearButtonText}>Clear Expenses</Text>
       </TouchableOpacity>
